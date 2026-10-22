@@ -1,0 +1,243 @@
+@media (max-width: 600px) {
+  .contact-section {
+  margin: 100px 20px 0;
+  padding: 25px;
+  }
+  .contact-links {
+  flex-direction: column;
+  }
+}
+
+:root {
+  --primary: #2c2250;
+  --secondary: #ab9ff2;
+  --accent: #893ea0;
+  --background: #0d0b12;
+  --surface: #241d2b;
+  --text: #fffdf8;
+}
+
+@font-face {
+  font-family: "MyGothFont";
+  src: url("./fonts/UnifrakturCook-Bold.ttf") format("truetype");
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  font-family: Arial, sans-serif;
+  margin-top: 120px;
+  margin-left: 120px;
+  margin-right: 120px;
+  padding: 20px;
+}
+
+title {
+  font-family: "MyGothFont", serif;
+  padding-left: 40px;
+}
+
+.card {
+  border: 4px solid var(--secondary);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3 {
+  font-family: "MyGothFont", serif;
+  color: var(--secondary);
+}
+
+.container {
+  background-color: var(--surface);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+button {
+  background-color: var(--primary);
+  color: var(--text);
+  border: 2px solid var(--secondary);
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--accent);
+  transform: scale(1.05);
+}
+
+a {
+  color: var(--secondary);
+}
+
+.a-backlink {
+  display: flex;
+  justify-content: end;
+  padding-top: 10px;
+}
+
+a:hover {
+  color: var(--accent);
+}
+
+.nav-custom-03 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #18021f;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav-custom-03 h1{
+  padding-left: 40px;
+}
+
+.nav-custom-03 ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.nav-custom-03 li {
+  padding: 0 20px;
+  border-bottom: 4px solid transparent;
+  transition: border-color 0.3s ease;
+  align-content: center;
+}
+
+.nav-custom-03 li:hover {
+  background-color: #5a0275;
+  border-color: #d984f3;
+}
+
+.nav-custom-03 a {
+  display: block;
+  padding: 16px 0;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-custom-03 a:hover {
+  color: #d984f3;
+}
+
+.nav-custom-03+main {
+  margin-top: 80px;
+}
+
+.nav-custom-03+body {
+  padding-top: 0px;
+}
+
+.about-section {
+  padding: 30px;
+}
+
+.projects-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #5a0275;
+  color: white;
+  text-decoration: none;
+  border: 2px solid #d984f3;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.projects-button:hover {
+  background-color: #d984f3;
+  color: #18021f;
+}
+
+.contact-section {
+  max-width: 700px;
+  margin: 120px auto 0;
+  padding: 40px;
+  background-color: #18021f;
+  color: white;
+  border: 2px solid #5a0275;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.contact-section h2 {
+  color: #d984f3;
+  font-size: 32px;
+}
+
+.contact-section p {
+  line-height: 1.6;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.contact-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #5a0275;
+  color: white;
+  border: 2px solid #d984f3;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease,
+  color 0.3s ease,
+  transform 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: var(--accent);
+  color: var(--background);
+  transform: translateY(-3px);
+}
+
+@media (max-width: 600px) {
+  .contact-section {
+  margin: 100px 20px 0;
+  padding: 25px;
+  }
+
+  .contact-links {
+    flex-direction: column;
+  }
+}
+
+.a-backlink-contact{
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.a-project-links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.project-image-01 {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: 10px auto;
+  display: block;
+}
